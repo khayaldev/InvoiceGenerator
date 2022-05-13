@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method='POST'>
+{% csrf_token %}
+<h5>Are u sure want to delete <b>{{object.title}}</b>?</h5>
+<button type='submit' class='btn btn-danger'><i class="fa-solid fa-trash-can"></i></button>
+</form>
+{% endblock content %}
